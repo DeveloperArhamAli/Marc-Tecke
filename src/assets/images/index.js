@@ -5,6 +5,19 @@ import DiamondAIMediaGroup from "./DiamondAIMediaGroup.png"
 import JimMartenson from "./JimMartenson.png"
 import KahlilMckinnie from "./KahlilMckinnie.png"
 import RoyIsernBand from "./RoyIsernBand.png"
+import ReactIcon from "./react.png"
+import LaravelIcon from "./laravel.png"
+import PHPIcon from "./php.png"
+import MySQLIcon from "./sql.png"
+import CSSIcon from "./css.png"
+import HTMLIcon from "./html.png"
+import ShopifyIcon from "./shopify.png"
+import WordPressIcon from "./wordpress.png"
+import AdobeXDIcon from "./adobexd.png"
+import AIIcon from "./ai.png"
+import PhotoshopIcon from "./photoshop.png"
+import jQueryIcon from "./jquery.png"
+import MagentoIcon from "./magento.png"
 
 export {
     BradGantt,
@@ -14,4 +27,17 @@ export {
     JimMartenson,
     KahlilMckinnie,
     RoyIsernBand,
+    ReactIcon,
+    LaravelIcon,
+    PHPIcon,
+    MySQLIcon,
+    CSSIcon,
+    HTMLIcon,
+    ShopifyIcon,
+    WordPressIcon,
+    AdobeXDIcon,
+    AIIcon,
+    PhotoshopIcon,
+    jQueryIcon,
+    MagentoIcon
 }

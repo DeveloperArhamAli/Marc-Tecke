@@ -7,4 +7,17 @@ declare module "@/assets/images" {
     export const JimMartenson: string;
     export const KahlilMckinnie: string;
     export const RoyIsernBand: string;
+    export const ReactIcon: string;
+    export const LaravelIcon: string;
+    export const PHPIcon: string;
+    export const MySQLIcon: string;
+    export const CSSIcon: string;
+    export const HTMLIcon: string;
+    export const ShopifyIcon: string;
+    export const WordPressIcon: string;
+    export const AdobeXDIcon: string;
+    export const AIIcon: string;
+    export const PhotoshopIcon: string;
+    export const jQueryIcon: string;
+    export const MagentoIcon: string;
 }

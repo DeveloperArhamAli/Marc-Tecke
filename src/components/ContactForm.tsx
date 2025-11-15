@@ -38,7 +38,7 @@ function ContactForm() {
                 </div>
             </div>
 
-            <form className="tech-card p-8 space-y-4">
+            <form className="tech-card p-8 space-y-4 pointer-events-auto before:pointer-events-none after:pointer-events-none">
                 <input
                     type="text"
                     placeholder="Your name"
