@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, Zap, Sparkles, Palette, Rocket, Shield, Paintbrush, Grid3x3 } from 'lucide-react'
+import { ArrowRight, Code2, Zap, Paintbrush, Grid3x3 } from 'lucide-react'
 import Button from "../components/Button"
 import { Link } from "react-router"
 import ServiceCard from '../components/ServiceCard'

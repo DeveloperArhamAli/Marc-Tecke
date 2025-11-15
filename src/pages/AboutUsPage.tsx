@@ -1,4 +1,4 @@
-import { ArrowRight, Cpu } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import Button from "../components/Button"
 import { Link } from 'react-router'
 
