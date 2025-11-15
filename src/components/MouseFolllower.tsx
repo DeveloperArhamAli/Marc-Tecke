@@ -18,7 +18,7 @@ export function MouseFollower() {
     return (
         <div
             ref={followerRef}
-            className="fixed pointer-events-none z-20 w-80 h-80 rounded-full -translate-x-1/2 -translate-y-1/2"
+            className="fixed pointer-events-none z-20 w-80 h-80 rounded-full -translate-x-1/2 -translate-y-1/2 hidden md:block"
             style={{
                 background: "radial-gradient(circle, rgba(102, 204, 255, 0.5) 0%, transparent 80%)",
                 filter: "blur(40px)",

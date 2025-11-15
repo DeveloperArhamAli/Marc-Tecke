@@ -122,71 +122,71 @@ function HomePage() {
         {/* Services Section */}
         <section id="services" className="relative section-divider px-6 border-t border-border pb-5">
             <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col items-center">
-                <p className="text-primary text-sm font-bold mb-3 tracking-widest">SERVICES</p>
-                <h2 className="heading-lg text-foreground mb-2">Our Areas of Expertise</h2>
-                <p className="body-text mb-10 text-center max-w-4xl">At Marc Tecke, we specialize in transforming ideas into visually stunning and functional designs. Our team is dedicated to delivering high-quality branding, design, and development solutions tailored to your business needs.</p>
-            </div>
+                <div className="flex flex-col items-center">
+                    <p className="text-primary text-sm font-bold mb-3 tracking-widest">SERVICES</p>
+                    <h2 className="heading-lg text-foreground mb-2">Our Areas of Expertise</h2>
+                    <p className="body-text mb-10 text-center max-w-4xl">At Marc Tecke, we specialize in transforming ideas into visually stunning and functional designs. Our team is dedicated to delivering high-quality branding, design, and development solutions tailored to your business needs.</p>
+                </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                    {
-                        icon: Paintbrush,
-                        title: "Logo Design",
-                        description:
-                        "Memorable logo designs that reflect your brand’s personality and identity.",
-                    },
-                    {
-                        icon: Code2,
-                        title: "Website Development",
-                        description:
-                        "Custom-built websites optimized with modern technology for exceptional results.",
-                    },
-                    {
-                        icon: Zap,
-                        title: "Brand Identity",
-                        description:
-                        "Brand strategies designed to communicate your message and captivate your audience.",
-                    },
-                    {
-                        icon: Grid3x3,
-                        title: "Digital Marketing",
-                        description:
-                        "Targeted, data-backed marketing to enhance your online reach and boost performance at social media.",
-                    },
-                    {
-                        icon: Code2,
-                        title: "SEO Services",
-                        description:
-                        "Organic SEO solutions that drive traffic and improve search performance.",
-                    },
-                    {
-                        icon: Zap,
-                        title: "App Development",
-                        description:
-                        "We create intuitive iOS and Android apps with seamless user experiences that drive performance and align with your brand.",
-                    },
-                    {
-                        icon: Grid3x3,
-                        title: "Product Packaging Design",
-                        description:
-                        "We create standout packaging designs that attracts customers and reinforces your brand.",
-                    },
-                    {
-                        icon: Code2,
-                        title: "Logo Animation",
-                        description:
-                        "Bring your brand to life with custom logo animations for intros, ads, and social media.",
-                    }
-                ].map((service, i) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {[
+                        {
+                            icon: Paintbrush,
+                            title: "Logo Design",
+                            description:
+                            "Memorable logo designs that reflect your brand’s personality and identity.",
+                        },
+                        {
+                            icon: Code2,
+                            title: "Website Development",
+                            description:
+                            "Custom-built websites optimized with modern technology for exceptional results.",
+                        },
+                        {
+                            icon: Zap,
+                            title: "Brand Identity",
+                            description:
+                            "Brand strategies designed to communicate your message and captivate your audience.",
+                        },
+                        {
+                            icon: Grid3x3,
+                            title: "Digital Marketing",
+                            description:
+                            "Targeted, data-backed marketing to enhance your online reach and boost performance at social media.",
+                        },
+                        {
+                            icon: Code2,
+                            title: "SEO Services",
+                            description:
+                            "Organic SEO solutions that drive traffic and improve search performance.",
+                        },
+                        {
+                            icon: Zap,
+                            title: "App Development",
+                            description:
+                            "We create intuitive iOS and Android apps with seamless user experiences that drive performance and align with your brand.",
+                        },
+                        {
+                            icon: Grid3x3,
+                            title: "Product Packaging Design",
+                            description:
+                            "We create standout packaging designs that attracts customers and reinforces your brand.",
+                        },
+                        {
+                            icon: Code2,
+                            title: "Logo Animation",
+                            description:
+                            "Bring your brand to life with custom logo animations for intros, ads, and social media.",
+                        }
+                    ].map((service, i) => (
 
-                    <>
-                        <div key={i}>
-                            <ServiceCard service={service} />
-                        </div>
-                    </>
-                ))}
-            </div>
+                        <>
+                            <div key={i}>
+                                <ServiceCard service={service} />
+                            </div>
+                        </>
+                    ))}
+                </div>
             </div>
         </section>
 

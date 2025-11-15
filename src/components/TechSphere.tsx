@@ -152,7 +152,7 @@ function RotatingSphere() {
 
 export default function TechSphere() {
   return (
-    <div className="w-[500px] h-[500px]">
+    <div className="relative z-0 w-[500px] h-[500px]">
       <Canvas camera={{ position: [0, 0, 8], fov: 60 }}>
         <ambientLight intensity={1} />
         <RotatingSphere />

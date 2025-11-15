@@ -1,8 +1,16 @@
 import { Facebook, Instagram, Mail, Phone } from "lucide-react"
 import Logo from "./Logo"
+import { Link } from "react-router"
 
 const Footer = () => {
-    const pages = ["Home", "About Us", "Services", "Portfolio", "Pricing", "Contact"]
+    const pages = [
+        { name: "Home", link: "/" },
+        { name: "About Us", link: "/about" },
+        { name: "Services", link: "/services" },
+        { name: "Portfolio", link: "/portfolio" },
+        { name: "Pricing", link: "/pricing" },
+        { name: "Contact", link: "/contact" },
+    ]
 
     const socialLinks = [
         {
@@ -38,7 +46,9 @@ const Footer = () => {
             <div className="md:w-1/2 w-full px-4">
                 <nav className="list-none mb-10 flex flex-col gap-1">
                 {pages.map((page, i) => (
-                    <li key={i} className="text-gray-400 hover:text-white cursor-pointer">{page}</li>
+                    <li key={i} className="text-gray-400 hover:text-white cursor-pointer">
+                        <Link to={page.link}>{page.name}</Link>
+                    </li>
                 ))}
                 </nav>
             </div>
@@ -48,7 +58,7 @@ const Footer = () => {
                 {socialLinks.map((socialLink, i) => (
                     <li key={i} className="flex items-center gap-2 text-gray-400 hover:text-white"> 
                     {socialLink.logo}
-                    <a href={socialLink.link}>{socialLink.content}</a>
+                    <a href={socialLink.link} target="_blank">{socialLink.content}</a>
                     </li>
                 ))}
                 </nav>
