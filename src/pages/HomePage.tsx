@@ -68,7 +68,7 @@ function HomePage() {
                 <div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8 glow-accent">
                     <Sparkles className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium text-primary">Next Generation Design</span>
+                    <span className="text-sm font-medium text-primary">Design That Elevates</span>
                 </div>
 
                 <h1 className="heading-xl mb-6 text-foreground">
