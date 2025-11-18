@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, Phone } from "lucide-react"
+import { Facebook, Instagram, Mail, MessageCircleHeart } from "lucide-react"
 import Logo from "./Logo"
 import { Link } from "react-router"
 
@@ -14,7 +14,7 @@ const Footer = () => {
 
     const socialLinks = [
         {
-            logo: <Phone className="h-5 w-5" />,
+            logo: <MessageCircleHeart className="h-5 w-5" />,
             content: "+33 7 44 99 93 89",
             link: "https://wa.me/33744999389"
         },

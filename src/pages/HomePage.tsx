@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, Grid3x3, Paintbrush, Sparkles, Zap } from "lucide-react"
+import { ArrowRight, Code2, Sparkles, Brush, Building2, CircleDollarSign, SearchCheck, Code, PackageSearch, Video } from "lucide-react"
 import Button from "../components/Button"
 import TechSphere from "../components/TechSphere"
 import ServiceCard from "../components/ServiceCard"
@@ -61,7 +61,6 @@ function HomePage() {
     
     return (
         <div className="min-h-screen bg-background overflow-hidden">
-
         {/* Hero Section */}
         <section className="relative pt-40 pb-32 px-6">
             <div className="max-w-7xl mx-auto">
@@ -120,7 +119,7 @@ function HomePage() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="relative section-divider px-6 border-t border-border pb-5">
+        <section id="services" className="relative section-divider px-6 border-t border-border">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col items-center">
                     <p className="text-primary text-sm font-bold mb-3 tracking-widest">SERVICES</p>
@@ -131,7 +130,7 @@ function HomePage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {[
                         {
-                            icon: Paintbrush,
+                            icon: Brush,
                             title: "Logo Design",
                             description:
                             "Memorable logo designs that reflect your brand’s personality and identity.",
@@ -143,37 +142,37 @@ function HomePage() {
                             "Custom-built websites optimized with modern technology for exceptional results.",
                         },
                         {
-                            icon: Zap,
+                            icon: Building2,
                             title: "Brand Identity",
                             description:
                             "Brand strategies designed to communicate your message and captivate your audience.",
                         },
                         {
-                            icon: Grid3x3,
+                            icon: CircleDollarSign,
                             title: "Digital Marketing",
                             description:
                             "Targeted, data-backed marketing to enhance your online reach and boost performance at social media.",
                         },
                         {
-                            icon: Code2,
+                            icon: SearchCheck,
                             title: "SEO Services",
                             description:
                             "Organic SEO solutions that drive traffic and improve search performance.",
                         },
                         {
-                            icon: Zap,
+                            icon: Code,
                             title: "App Development",
                             description:
                             "We create intuitive iOS and Android apps with seamless user experiences that drive performance and align with your brand.",
                         },
                         {
-                            icon: Grid3x3,
+                            icon: PackageSearch,
                             title: "Product Packaging Design",
                             description:
                             "We create standout packaging designs that attracts customers and reinforces your brand.",
                         },
                         {
-                            icon: Code2,
+                            icon: Video,
                             title: "Logo Animation",
                             description:
                             "Bring your brand to life with custom logo animations for intros, ads, and social media.",
@@ -190,36 +189,8 @@ function HomePage() {
             </div>
         </section>
 
-        {/* About Section */}
-        <section className="relative section-divider px-6 bg-secondary/10">
-            <div className="max-w-4xl mx-auto">
-            <div className="text-center">
-                <p className="text-primary text-sm font-bold mb-3 tracking-widest">ABOUT</p>
-                <h2 className="heading-lg text-foreground mb-12">Pioneering Digital Excellence</h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="tech-card p-8 glow-hover text-left">
-                    <h3 className="text-sm font-bold text-primary mb-3 tracking-widest">VISION</h3>
-                    <p className="body-text text-foreground">
-                    We believe exceptional technology and design create competitive advantage. Every project is an
-                    opportunity to push boundaries and innovate.
-                    </p>
-                </div>
-
-                <div className="tech-card p-8 glow-hover text-left">
-                    <h3 className="text-sm font-bold text-primary mb-3 tracking-widest">APPROACH</h3>
-                    <p className="body-text text-foreground">
-                    We combine data-driven strategy with creative execution. From concept to launch, we ensure your
-                    digital presence stands out in the market.
-                    </p>
-                </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
         {/* Achievements / Stats Section */}
-        <section className="relative section-divider px-6 py-24 bg-primary/5">
+        <section className="relative section-divider px-6 py-24">
             <div className="max-w-6xl mx-auto">
 
                 <div className="text-center mb-16">
@@ -235,7 +206,7 @@ function HomePage() {
                     { value: "100%", label: "Satisfaction Guarantee" },
                     { value: "24/7", label: "Consultancy" },
                 ].map((item, i) => (
-                    <div key={i} className="tech-card p-8 glow-hover">
+                    <div key={i} className="tech-card p-8 glow-hover bg-primary/10">
                     <h3 className="text-4xl font-bold text-primary mb-2">{item.value}</h3>
                     <p className="text-foreground/70 text-sm font-medium">{item.label}</p>
                     </div>
@@ -243,43 +214,6 @@ function HomePage() {
 
                 </div>
 
-            </div>
-        </section>
-
-        {/* Portfolio Section */}
-        <section id="portfolio" className="relative section-divider px-6 border-t border-border pb-5">
-            <div className="max-w-7xl mx-auto">
-            <div className="mb-20">
-                <p className="text-primary text-sm font-bold mb-3 tracking-widest">FEATURED WORK</p>
-                <h2 className="heading-lg text-foreground">Recent Projects</h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {[
-                { title: "Next-Gen Platform", category: "Web Development" },
-                { title: "AI-Powered Dashboard", category: "UI/UX Design" },
-                { title: "Real-Time Analytics", category: "Development" },
-                { title: "Motion Design System", category: "Design System" },
-                ].map((project, i) => (
-                <div key={i} className="group relative overflow-hidden rounded-lg aspect-video tech-card glow-hover">
-                    <div className="absolute inset-0 bg-linear-to-br from-primary/20 via-accent/10 to-primary/5" />
-                    <div className="absolute inset-0 flex flex-col justify-end p-8 text-white z-10">
-                    <p className="text-xs font-bold text-primary/70 mb-3 tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        {project.category}
-                    </p>
-                    <h3 className="text-2xl font-bold">{project.title}</h3>
-                    </div>
-                </div>
-                ))}
-            </div>
-
-            <div className="flex justify-center mt-16">
-                <Button 
-                    text="View More" 
-                    to="/portfolio" 
-                    className="border border-primary/50 text-foreground hover:bg-primary/10 bg-transparent font-semibold"
-                />
-            </div>
             </div>
         </section>
 
