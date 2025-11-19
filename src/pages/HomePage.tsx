@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, Sparkles, Brush, Building2, CircleDollarSign, SearchCheck, Code, PackageSearch, Video } from "lucide-react"
+import { ArrowRight, Code2, Sparkles, Brush, SearchCheck, PackageSearch, Video } from "lucide-react"
 import Button from "../components/Button"
 import TechSphere from "../components/TechSphere"
 import ServiceCard from "../components/ServiceCard"
@@ -10,7 +10,10 @@ import {
     DiamondAIMediaGroup,
     JimMartenson,
     KahlilMckinnie,
-    RoyIsernBand 
+    RoyIsernBand,
+    EyeScannerIcon,
+    MegaPhoneIcon,
+    MobileDevelopmentIcon
 } from "@/assets/images";
 
 function HomePage() {
@@ -68,7 +71,7 @@ function HomePage() {
                 <div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8 glow-accent">
                     <Sparkles className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium text-primary">Design That Elevates</span>
+                    <span className="text-sm font-medium text-primary">Digital Designs & Web Solutions Agency</span>
                 </div>
 
                 <h1 className="heading-xl mb-6 text-foreground">
@@ -83,12 +86,12 @@ function HomePage() {
                         to="/contact" 
                         icon={<ArrowRight 
                         className="w-4 h-4 ml-2" />} 
-                        className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent"
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full"
                     />
                     <Button 
                         text="Portfolio" 
                         to="#portfolio" 
-                        className="border-primary/50 text-foreground hover:bg-primary/10 bg-transparent font-semibold"
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-lg px-5"
                     />
                 </div>
                 </div>
@@ -120,6 +123,7 @@ function HomePage() {
 
         {/* Services Section */}
         <section id="services" className="relative section-divider px-6 border-t border-border">
+            <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col items-center">
                     <p className="text-primary text-sm font-bold mb-3 tracking-widest">SERVICES</p>
@@ -142,14 +146,16 @@ function HomePage() {
                             "Custom-built websites optimized with modern technology for exceptional results.",
                         },
                         {
-                            icon: Building2,
+                            icon: EyeScannerIcon,
                             title: "Brand Identity",
+                            image: true,
                             description:
                             "Brand strategies designed to communicate your message and captivate your audience.",
                         },
                         {
-                            icon: CircleDollarSign,
+                            icon: MegaPhoneIcon,
                             title: "Digital Marketing",
+                            image: true,
                             description:
                             "Targeted, data-backed marketing to enhance your online reach and boost performance at social media.",
                         },
@@ -160,16 +166,17 @@ function HomePage() {
                             "Organic SEO solutions that drive traffic and improve search performance.",
                         },
                         {
-                            icon: Code,
+                            icon: MobileDevelopmentIcon,
                             title: "App Development",
+                            image: true,
                             description:
                             "We create intuitive iOS and Android apps with seamless user experiences that drive performance and align with your brand.",
                         },
                         {
                             icon: PackageSearch,
-                            title: "Product Packaging Design",
+                            title: "Product Packaging & Label Design",
                             description:
-                            "We create standout packaging designs that attracts customers and reinforces your brand.",
+                            "We create standout packaging and label designs that attracts customers and reinforces your brand.",
                         },
                         {
                             icon: Video,
@@ -191,6 +198,7 @@ function HomePage() {
 
         {/* Achievements / Stats Section */}
         <section className="relative section-divider px-6 py-24">
+            <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
             <div className="max-w-6xl mx-auto">
 
                 <div className="text-center mb-16">
@@ -219,6 +227,7 @@ function HomePage() {
 
         {/* Testimonials Section */}
         <section className="relative section-divider px-6 py-24 bg-secondary/10">
+            <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
             <div className="max-w-5xl mx-auto text-center">
 
                 <p className="text-primary text-sm font-bold mb-3 tracking-widest">TESTIMONIALS</p>
@@ -242,7 +251,7 @@ function HomePage() {
                     to="/contact" 
                     icon={<ArrowRight 
                     className="w-4 h-4 ml-2" />} 
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full"
                 />
             </div>
         </section>

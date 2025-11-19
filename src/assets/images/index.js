@@ -18,6 +18,10 @@ import AIIcon from "./ai.png"
 import PhotoshopIcon from "./photoshop.png"
 import jQueryIcon from "./jquery.png"
 import MagentoIcon from "./magento.png"
+import EyeScannerIcon from "./eye-scanner.png"
+import MegaPhoneIcon from "./megaphone.png"
+import MobileDevelopmentIcon from "./mobile-development.png"
+import WhatsappIcon from "./whatsapp.png"
 
 export {
     BradGantt,
@@ -39,5 +43,9 @@ export {
     AIIcon,
     PhotoshopIcon,
     jQueryIcon,
-    MagentoIcon
+    MagentoIcon,
+    EyeScannerIcon,
+    MegaPhoneIcon,
+    MobileDevelopmentIcon,
+    WhatsappIcon,
 }

@@ -20,4 +20,8 @@ declare module "@/assets/images" {
     export const PhotoshopIcon: string;
     export const jQueryIcon: string;
     export const MagentoIcon: string;
+    export const EyeScannerIcon: string;
+    export const MegaPhoneIcon: string;
+    export const MobileDevelopmentIcon: string;
+    export const WhatsappIcon : string;
 }
