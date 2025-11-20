@@ -3,7 +3,7 @@ import Button from "./Button"
 function ContactForm() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="tech-card p-8">
+            <div className="tech-card p-8 bg-primary/10">
                 <h3 className="text-lg font-bold text-foreground mb-8">Contact Information</h3>
                 <div className="space-y-6">
                     <div>
@@ -38,7 +38,7 @@ function ContactForm() {
                 </div>
             </div>
 
-            <form className="tech-card p-8 space-y-4 pointer-events-auto before:pointer-events-none after:pointer-events-none">
+            <form className="tech-card bg-primary/10 p-8 space-y-4 pointer-events-auto before:pointer-events-none after:pointer-events-none">
                 <input
                     type="text"
                     placeholder="Your name"

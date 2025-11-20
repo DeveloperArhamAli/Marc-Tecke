@@ -2,6 +2,7 @@ import { Facebook, FacebookIcon, Instagram, InstagramIcon, Mail } from "lucide-r
 import Logo from "./Logo"
 import { Link } from "react-router"
 import { WhatsappIcon } from "@/assets/images"
+import { RiWhatsappLine } from "@remixicon/react"
 
 const Footer = () => {
     const pages = [
@@ -15,7 +16,7 @@ const Footer = () => {
 
     const socialLinks = [
         {
-            logo: <img src={WhatsappIcon} className="h-5 w-5" />,
+            logo: <RiWhatsappLine className="h-6 w-6" />,
             content: "+33 7 44 99 93 89",
             link: "https://wa.me/33744999389"
         },
@@ -73,7 +74,7 @@ const Footer = () => {
             </p>
             <span className="flex items-center gap-4">
                 <a className="text-gray-400" href="https://wa.me/33744999389" target="_blank">
-                    <img src={WhatsappIcon} className="w-5 h-5" />
+                    <RiWhatsappLine className="w-5 h-5" />
                 </a>
                 <a className="text-gray-400" href="mailto:marctecke@gmail.com" target="_blank">
                     <Mail className="w-5 h-5" />

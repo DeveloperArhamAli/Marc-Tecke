@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-background overflow-hidden">
       {/* Hero Section */}
-      <section className="relative pt-40 pb-32 px-6">
+      <section className="relative pt-40 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <p className="text-primary text-sm font-bold mb-3 tracking-widest">SERVICES</p>
@@ -22,7 +22,8 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="relative section-divider px-6 border-t border-border">
+      <section className="relative section-divider px-6 border-t border-border pt-15">
+        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
         <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -88,7 +89,8 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="relative section-divider px-6 bg-secondary/10">
+      <section className="relative section-divider px-6 bg-secondary/10 pt-15">
+        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-primary text-sm font-bold mb-3 tracking-widest">OUR PROCESS</p>
@@ -109,7 +111,8 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative section-divider px-6 py-32">
+      <section className="relative section-divider px-6 md:py-32">
+        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
         <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
         <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center">
           <h2 className="heading-lg mb-6 text-foreground">Let's Discuss Your Needs</h2>
@@ -119,7 +122,7 @@ export default function Services() {
           <Link to="/#contact">
             <Button 
                 text='Schedule Consultation'
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full"
                 icon={<ArrowRight className="w-4 h-4 ml-2" />}
             />
           </Link>
