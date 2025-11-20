@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-background overflow-hidden">
       {/* Hero Section */}
-      <section className="relative pt-40 pb-32 px-6">
+      <section className="relative pt-40 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <p className="text-primary text-sm font-bold mb-3 tracking-widest">ABOUT US</p>

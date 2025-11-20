@@ -39,11 +39,11 @@ const Footer = () => {
     return (
         <footer className="text-gray-400 bg-primary/10 body-font">
         <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div className="w-1/3 shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <div className="w-full md:w-1/3 shrink-0 md:mx-0 mx-auto text-left">
             <Logo size="text-4xl" />
             <p className="mt-2 text-sm text-gray-500">Designing the Future of Your Brand Identity</p>
             </div>
-            <div className="grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div className="grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-left">
             <div className="md:w-1/2 w-full px-4">
                 <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">PAGES</h2>
                 <nav className="list-none mb-10 flex flex-col gap-1">
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="bg-primary-800 bg-opacity-75">
-            <div className="container mx-auto py-4 px-5 flex items-center justify-between flex-wrap flex-col sm:flex-row">
+            <div className="container mx-auto py-4 px-5 flex items-center justify-between gap-2 flex-wrap flex-col sm:flex-row">
             <p className="text-gray-400 text-sm text-center sm:text-left">Copyright © {new Date().getFullYear()} Marc Tecke
             </p>
             <span className="flex items-center gap-4">

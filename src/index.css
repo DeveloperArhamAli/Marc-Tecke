@@ -172,7 +172,7 @@
 
   /* Tech card styling with border glow */
   .tech-card {
-    @apply relative overflow-hidden rounded-lg border border-border bg-card backdrop-blur-sm transition-all duration-300 bg-primary/10;
+    @apply relative overflow-hidden rounded-lg border border-border bg-card backdrop-blur-sm transition-all duration-300 bg-primary/35 md:bg-primary/10;
   }
 
   .tech-card::before {
