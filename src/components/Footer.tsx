@@ -1,7 +1,6 @@
 import { Facebook, FacebookIcon, Instagram, InstagramIcon, Mail } from "lucide-react"
 import Logo from "./Logo"
 import { Link } from "react-router"
-import { WhatsappIcon } from "@/assets/images"
 import { RiWhatsappLine } from "@remixicon/react"
 
 const Footer = () => {
