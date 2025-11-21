@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, Sparkles, Brush, SearchCheck, PackageSearch, Video } from "lucide-react"
+import { ArrowRight, Code2, Sparkles, Brush, SearchCheck, PackageSearch, Video, View, Megaphone, Smartphone } from "lucide-react"
 import Button from "../components/Button"
 import TechSphere from "../components/TechSphere"
 import ServiceCard from "../components/ServiceCard"
@@ -11,9 +11,6 @@ import {
     JimMartenson,
     KahlilMckinnie,
     RoyIsernBand,
-    EyeScannerIcon,
-    MegaPhoneIcon,
-    MobileDevelopmentIcon
 } from "@/assets/images";
 
 function HomePage() {
@@ -84,9 +81,9 @@ function HomePage() {
                             </p>
 
                             <div className="flex gap-2 justify-center lg:justify-start w-full">
-                                <Button text="Get In Touch" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full" />
+                                <Button text="Get In Touch" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full " />
 
-                                <Button text="Portfolio" to="#portfolio" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full px-5" />
+                                <Button text="Portfolio" to="/portfolio" className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full px-5" />
                             </div>
                         </div>
 
@@ -126,16 +123,14 @@ function HomePage() {
                             "Custom-built websites optimized with modern technology for exceptional results.",
                         },
                         {
-                            icon: EyeScannerIcon,
+                            icon: View,
                             title: "Brand Identity",
-                            image: true,
                             description:
                             "Brand strategies designed to communicate your message and captivate your audience.",
                         },
                         {
-                            icon: MegaPhoneIcon,
+                            icon: Megaphone,
                             title: "Digital Marketing",
-                            image: true,
                             description:
                             "Targeted, data-backed marketing to enhance your online reach and boost performance at social media.",
                         },
@@ -146,9 +141,8 @@ function HomePage() {
                             "Organic SEO solutions that drive traffic and improve search performance.",
                         },
                         {
-                            icon: MobileDevelopmentIcon,
+                            icon: Smartphone,
                             title: "App Development",
-                            image: true,
                             description:
                             "We create intuitive iOS and Android apps with seamless user experiences that drive performance and align with your brand.",
                         },
@@ -217,13 +211,14 @@ function HomePage() {
 
         {/* CTA Section */}
         <section className="relative section-divider px-4 md:px-6 py-18 md:py-32 text-center">
+                <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
                 <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
                 <div className="max-w-3xl mx-auto relative z-10 flex flex-col items-center">
                     <p className="text-primary text-sm font-bold mb-4 tracking-widest">READY?</p>
                     <h2 className="heading-lg mb-6 text-foreground">Ready to Upgrade Your Online Presence?</h2>
                     <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">Let’s work together to create impactful designs.</p>
 
-                    <Button text="Get Started" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full" />
+                    <Button text="Get Started" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" />
                 </div>
         </section>
 

@@ -22,6 +22,7 @@ import EyeScannerIcon from "./eye-scanner.png"
 import MegaPhoneIcon from "./megaphone.png"
 import MobileDevelopmentIcon from "./mobile-development.png"
 import WhatsappIcon from "./whatsapp.png"
+import TeamCombine from "./TeamCombine.jpg"
 
 export {
     BradGantt,
@@ -48,4 +49,5 @@ export {
     MegaPhoneIcon,
     MobileDevelopmentIcon,
     WhatsappIcon,
+    TeamCombine
 }

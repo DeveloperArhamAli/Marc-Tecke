@@ -31,7 +31,7 @@ function TestimonialCard({
             “
           </span>
 
-          <p className="text-white/80 pl-10 max-md:pl-3 pr-2 leading-relaxed text-left pb-2 text-xs">
+          <p className="text-white/80 pl-10 max-md:pl-3 pr-2 leading-relaxed text-left pb-2 text-xs md:text-lg">
             {message}
           </p>
         </div>

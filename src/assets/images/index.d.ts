@@ -24,4 +24,5 @@ declare module "@/assets/images" {
     export const MegaPhoneIcon: string;
     export const MobileDevelopmentIcon: string;
     export const WhatsappIcon : string;
+    export const TeamCombine: string
 }
