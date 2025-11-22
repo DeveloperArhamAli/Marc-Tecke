@@ -1,6 +1,6 @@
 import { ArrowRight, Check } from 'lucide-react'
 import Button from '../components/Button'
-import { Link } from "react-router"
+import OverlayText from '../components/OverlayText'
 
 export default function Pricing() {
   return (
@@ -8,13 +8,9 @@ export default function Pricing() {
       {/* Hero Section */}
       <section className="relative pt-40 pb-15 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-primary text-sm font-bold mb-3 tracking-widest">PRICING</p>
-          <h1 className="heading-xl mb-6 text-foreground">
-            <span className="linear-text">Transparent Pricing</span> for Every Budget
-          </h1>
-          <p className="body-text max-w-2xl mx-auto">
-            Choose the perfect plan for your project. All plans include dedicated support and regular updates.
-          </p>
+          <OverlayText text='Pricing' />
+          <h1 className="heading-xl mb-6 text-foreground">Pricing Page</h1>
+          <p className="body-text max-w-2xl mx-auto">Choose the perfect plan for your project. All plans include dedicated support and regular updates.</p>
         </div>
       </section>
 
@@ -26,54 +22,47 @@ export default function Pricing() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Starter",
-                price: "$4,999",
-                period: "One-time",
-                description: "Perfect for small projects and MVPs",
+                name: "Basic",
+                price: "$999",
+                description: "Ideal for small businesses taking their first steps online.",
                 features: [
-                  "5 Pages/Sections",
-                  "Responsive Design",
-                  "Basic SEO Setup",
-                  "Contact Form",
-                  "Mobile Optimization",
-                  "2 Rounds of Revisions",
-                  "30 Days Support",
+                  "5-page responsive website",
+                  "Essential SEO optimization",
+                  "Contact form integration",
+                  "Mobile-friendly design",
+                  "30 days of post-launch support",
                 ],
                 highlighted: false,
               },
               {
                 name: "Professional",
-                price: "$12,999",
-                period: "One-time",
-                description: "Ideal for growing businesses",
+                price: "$2,499",
+                description: "Perfect for growing businesses with tailored digital needs.",
                 features: [
-                  "Unlimited Pages",
-                  "Custom Design",
-                  "Advanced SEO",
-                  "CMS Integration",
-                  "E-commerce Setup",
-                  "5 Rounds of Revisions",
-                  "3 Months Support",
-                  "Analytics Setup",
-                  "Performance Optimization",
+                  "10-page responsive website",
+                  "Advanced SEO optimization",
+                  "Content Management System (CMS) integration",
+                  "E-commerce setup (up to 50 products)",
+                  "Social media integration",
+                  "90 days of post-launch support",
+                  "3 rounds of design revisions",
                 ],
                 highlighted: true,
               },
               {
                 name: "Enterprise",
-                price: "Custom",
-                period: "Tailored",
-                description: "For complex projects and scaling",
+                price: "$4,999+",
+                description: "A comprehensive, premium solution for established businesses seeking advanced digital capabilities.",
                 features: [
-                  "Custom Solutions",
-                  "Full-Stack Development",
-                  "Advanced Features",
-                  "Unlimited Revisions",
-                  "6 Months Support",
-                  "API Integration",
-                  "Priority Support",
-                  "Ongoing Maintenance",
-                  "Team Training",
+                  "Custom website with unlimited pages",
+                  "Premium SEO optimization",
+                  "Advanced e-commerce functionality (unlimited products)",
+                  "Custom integrations and automation",
+                  "Performance optimization & analytics setup",
+                  "Dedicated account manager",
+                  "180 days of priority post-launch support",
+                  "5 rounds of design revisions",
+                  "Social media strategy & campaign guidance",
                 ],
                 highlighted: false,
               },
@@ -97,7 +86,6 @@ export default function Pricing() {
                     <span className="text-4xl font-bold bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
                       {plan.price}
                     </span>
-                    <span className="text-foreground/60 text-sm">{plan.period}</span>
                   </div>
                 </div>
 
@@ -110,17 +98,16 @@ export default function Pricing() {
                   ))}
                 </div>
 
-                <Link to="/contact">
                   <Button
                     className={`w-full font-semibold ${
                       plan.highlighted
                         ? "bg-primary hover:bg-primary/90 text-primary-foreground glow-accent justify-center"
-                        : "border-primary/50 text-foreground hover:bg-primary/10 bg-transparent"
+                        : "border-primary/50 text-foreground bg-primary/10 justify-center"
                     }`}
                     text='Get Started'
+                    to='/contact'
                     icon={<ArrowRight className="w-4 h-4 ml-2" />}
                   />
-                </Link>
               </div>
             ))}
           </div>
@@ -132,27 +119,44 @@ export default function Pricing() {
         <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-primary text-sm font-bold mb-3 tracking-widest">FAQ</p>
-            <h2 className="heading-lg text-foreground">Common Questions</h2>
+            <OverlayText text='FAQs' />
+            <h2 className="heading-lg text-foreground mb-2">Frequently Asked Questions</h2>
+            <p className='text-lg'>Get answers to frequently asked questions about our services and pricing.</p>
           </div>
 
           <div className="space-y-6">
             {[
               {
-                q: "Do you offer payment plans?",
-                a: "Yes, we offer flexible payment options for all projects. Contact us to discuss a plan that works for your budget.",
+                q: "How long does it take to complete a website?",
+                a: "The timeline depends on the package and project complexity. Basic websites typically take 2–3 weeks, Professional websites 4–6 weeks, and Enterprise solutions 6–12 weeks.",
               },
               {
-                q: "What's included in support?",
-                a: "Support includes bug fixes, minor updates, and consultation on best practices during the included period.",
+                q: "Can I upgrade my package later?",
+                a: "Absolutely! You can start with a smaller package and upgrade as your business grows. We make the transition seamless.",
               },
               {
-                q: "Can I upgrade my plan?",
-                a: "As your project grows, we can upgrade your plan and add additional features as needed.",
+                q: "Do you provide content for the website?",
+                a: "We can assist with content strategy and guidance. Content creation can be included as part of higher-tier packages or offered as an additional service.",
               },
               {
-                q: "Do you offer maintenance after launch?",
-                a: "Yes, we offer ongoing maintenance packages to keep your site secure, fast, and updated with the latest features.",
+                q: "What kind of support do you offer after launch?",
+                a: "Support varies by package. Basic includes 1 month, Professional includes 3 months, and Enterprise includes 6 months of priority post-launch support. Additional maintenance plans are available for ongoing updates, security, and performance optimization.",
+              },
+              {
+                q: "Do you provide SEO and digital marketing services?",
+                a: "Yes, our Professional and Enterprise packages include advanced SEO and social media integration. Enterprise clients also receive guidance on social media strategy and campaigns.",
+              },
+              {
+                q: "How many design revisions are included",
+                a: "Basic includes standard revisions, Professional includes 3 rounds, and Enterprise includes 5 rounds of revisions to ensure your complete satisfaction.",
+              },
+              {
+                q: "Do you offer post-launch maintenance?",
+                a: "Yes, we offer optional ongoing maintenance plans to keep your website updated, secure, and running smoothly beyond the included support period.",
+              },
+              {
+                q: "What payment options do you accept?",
+                a: "We offer flexible payment options, including full upfront payment or milestone-based installments depending on the package and project scope.",
               },
             ].map((faq, i) => (
               <div key={i} className="tech-card p-6 glow-hover">
@@ -169,17 +173,14 @@ export default function Pricing() {
         <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
         <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
         <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center">
-          <h2 className="heading-lg mb-6 text-foreground">Still have questions?</h2>
-          <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">
-            Let's hop on a call and discuss the perfect solution for your project.
-          </p>
-          <Link to="/contact">
+          <h2 className="heading-lg mb-6 text-foreground">Require a Customized Approach?</h2>
+          <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">Get in touch to receive a customized quote designed to meet your unique business needs and objectives.</p>
             <Button 
-                text='Schedule Call'
+                text='Request Your Quote'
+                to='/contact'
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent"
                 icon={<ArrowRight className="w-4 h-4 ml-2" />}
             />
-          </Link>
         </div>
       </section>
     </div>

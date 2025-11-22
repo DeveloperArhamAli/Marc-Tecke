@@ -23,6 +23,9 @@ import MegaPhoneIcon from "./megaphone.png"
 import MobileDevelopmentIcon from "./mobile-development.png"
 import WhatsappIcon from "./whatsapp.png"
 import TeamCombine from "./TeamCombine.jpg"
+import MarcWeaver from "./MarcWeaver.png"
+import ZubairAhmad from "./ZubairAhmad.png"
+import SteveMark from "./SteveMarc.png"
 
 export {
     BradGantt,
@@ -49,5 +52,8 @@ export {
     MegaPhoneIcon,
     MobileDevelopmentIcon,
     WhatsappIcon,
-    TeamCombine
+    TeamCombine,
+    MarcWeaver,
+    ZubairAhmad,
+    SteveMark
 }

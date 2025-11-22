@@ -10,7 +10,7 @@ interface ButtonProps {
 function Button({ text, to, icon, className = "" }: ButtonProps) {
     const ButtonContent = (
         <button
-        className={`px-3 py-2 rounded flex items-center gap-2 cursor-pointer ${className}`}
+        className={`px-3 py-2 rounded flex items-center gap-1 cursor-pointer ${className}`}
         >
             {text}
             {icon}

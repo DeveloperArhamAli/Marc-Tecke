@@ -1,7 +1,7 @@
 import { ArrowRight, Award, Handshake, Users } from 'lucide-react'
 import Button from "../components/Button"
 import { Link } from 'react-router'
-import { TeamCombine } from '@/assets/images'
+import { MarcWeaver, SteveMark, TeamCombine, ZubairAhmad } from '@/assets/images'
 import OverlayText from '../components/OverlayText'
 
 export default function About() {
@@ -100,12 +100,26 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Marc Weaver", role: "Founder, Web Developer & Graphic Designer" },
-              { name: "Zubair Ahmad", role: "Client Relations Manager & Brand Designer" },
-              { name: "Steve Marc", role: "Web Developer & SEO Specialist" },
+              { 
+                name: "Marc Weaver", 
+                role: "Founder, Web Developer & Graphic Designer",
+                image: MarcWeaver
+              },
+              { 
+                name: "Zubair Ahmad", 
+                role: "Client Relations Manager & Brand Designer",
+                image: ZubairAhmad
+              },
+              { 
+                name: "Steve Marc", 
+                role: "Web Developer & SEO Specialist",
+                image: SteveMark
+              },
             ].map((member, i) => (
               <div key={i} className="tech-card p-8 glow-hover text-center">
-                <div className="w-16 h-16 rounded-full bg-linear-to-br from-primary to-accent mx-auto mb-6" />
+                <div className="w-20 h-20 rounded-full mx-auto mb-3">
+                  <img src={member.image} alt={member.name} className="w-full h-full object-cover rounded-full" />
+                </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{member.name}</h3>
                 <p className="text-foreground/60 text-sm">{member.role}</p>
               </div>
@@ -118,18 +132,15 @@ export default function About() {
       <section className="relative section-divider px-6 md:py-32">
         <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
         <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
-        <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center">
-          <h2 className="heading-lg mb-6 text-foreground">Ready to Work Together?</h2>
-          <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">
-            Let's collaborate to create something extraordinary for your business.
-          </p>
-          <Link to="/#contact">
-            <Button 
-                text='Get In Touch'
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full" 
-                icon={<ArrowRight className="w-4 h-4 ml-2" />}
-            />
-          </Link>
+        <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center border border-white/10 p-10 rounded-lg glow-hover">
+          <h2 className="heading-lg mb-6 text-foreground">Ready to Begin Your Project?</h2>
+          <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">Let’s work together to develop innovative designs that elevate your brand and set you apart in the digital world.</p>
+          <Button 
+              text='Contact Us Today'
+              to='/contact'
+              className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" 
+              icon={<ArrowRight className="w-4 h-4 ml-2" />}
+          />
         </div>
       </section>
     </div>
