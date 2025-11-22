@@ -178,7 +178,7 @@ export default function Pricing() {
             <Button 
                 text='Request Your Quote'
                 to='/contact'
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent"
+                className="bg-linear-to-r from-primary to-accent rounded-full text-primary-foreground font-semibold glow-accent"
                 icon={<ArrowRight className="w-4 h-4 ml-2" />}
             />
         </div>

@@ -10,7 +10,7 @@ function Navbar() {
         { to: "/about", label: "About Us" },
         { to: "/services", label: "Services" },
         { to: "/portfolio", label: "Portfolio" },
-        { to: "/Pricing", label: "Pricing" },
+        { to: "/pricing", label: "Pricing" },
         { to: "/contact", label: "Contact" },
     ]
   return (

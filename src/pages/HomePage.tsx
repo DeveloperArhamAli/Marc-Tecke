@@ -12,6 +12,7 @@ import {
     KahlilMckinnie,
     RoyIsernBand,
 } from "@/assets/images";
+import OverlayText from "../components/OverlayText"
 
 function HomePage() {
     const testimonials = [
@@ -103,7 +104,7 @@ function HomePage() {
                 <div className="max-w-7xl mx-auto">
 
                     <div className="flex flex-col items-center text-center px-2">
-                        <p className="text-primary text-sm font-bold mb-3 tracking-widest">SERVICES</p>
+                        <OverlayText text="Services" />
                         <h2 className="heading-lg text-foreground mb-2">Our Areas of Expertise</h2>
                         <p className="body-text mb-10 max-w-3xl">We specialize in transforming ideas into visually stunning and functional designs.</p>
                     </div>
@@ -175,7 +176,7 @@ function HomePage() {
             <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
             <div className="max-w-6xl mx-auto text-center">
 
-                <p className="text-primary text-sm font-bold mb-3 tracking-widest">OUR IMPACT</p>
+                <OverlayText text="Our Impact" />
                 <h2 className="heading-lg text-foreground mb-14">Milestones We’re Proud Of</h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-10">
@@ -200,7 +201,7 @@ function HomePage() {
             <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
             <div className="max-w-5xl mx-auto text-center">
 
-                <p className="text-primary text-sm font-bold mb-3 tracking-widest">TESTIMONIALS</p>
+                <OverlayText text="Testimonials" />
                 <h2 className="heading-lg text-foreground mb-12">Trusted by Growing Brands</h2>
                 <p className="body-text mb-10 text-center">We value our client relationships. Here’s their feedback on collaborating with us.</p>
 
@@ -214,7 +215,8 @@ function HomePage() {
                 <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
                 <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
                 <div className="max-w-3xl mx-auto relative z-10 flex flex-col items-center">
-                    <p className="text-primary text-sm font-bold mb-4 tracking-widest">READY?</p>
+
+                    <OverlayText text="Ready?" />
                     <h2 className="heading-lg mb-6 text-foreground">Ready to Upgrade Your Online Presence?</h2>
                     <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">Let’s work together to create impactful designs.</p>
 

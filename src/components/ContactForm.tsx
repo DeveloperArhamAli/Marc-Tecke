@@ -1,65 +1,106 @@
-import Button from "./Button"
+import { useState } from "react"
+import { useForm } from "react-hook-form"
+import { useRef } from "react"
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
-    return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="tech-card p-8 bg-primary/10">
-                <h3 className="text-lg font-bold text-foreground mb-8">Contact Information</h3>
-                <div className="space-y-6">
-                    <div>
-                    <p className="text-foreground/60 text-xs font-bold tracking-widest mb-2">EMAIL</p>
-                    <a
-                        href="mailto: marctecke@gmail.com"
-                        className="text-primary hover:text-accent font-semibold transition-colors"
-                    >
-                        marctecke@gmail.com
-                    </a>
-                    </div>
-                    <div>
-                    <p className="text-foreground/60 text-xs font-bold tracking-widest mb-2">PHONE</p>
-                    <a href="https://wa.me/33744999389" className="text-primary hover:text-accent font-semibold transition-colors">
-                        +33 7 44 99 93 89
-                    </a>
-                    </div>
-                    <div>
-                    <p className="text-foreground/60 text-xs font-bold tracking-widest mb-3">FOLLOW</p>
-                    <div className="flex gap-4">
-                        {["LinkedIn", "Twitter", "Instagram"].map((social) => (
-                        <a
-                            key={social}
-                            href="#"
-                            className="text-foreground/50 hover:text-primary transition-colors text-sm font-medium"
-                        >
-                            {social}
-                        </a>
-                        ))}
-                    </div>
-                    </div>
-                </div>
-            </div>
+    const { register, handleSubmit } = useForm()
+    const [error, setError] = useState("")
+    const [success, setSuccess] = useState("")
+    const [disabled, setDisabled] = useState(false)
+    const form = useRef<HTMLFormElement | null>(null);
 
-            <form className="tech-card bg-primary/10 p-8 space-y-4 pointer-events-auto before:pointer-events-none after:pointer-events-none">
-                <input
-                    type="text"
-                    placeholder="Your name"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-primary/5 text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                />
-                <input
-                    type="email"
-                    placeholder="Your email"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-primary/5 text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                />
+    const contact = () => {
+        setError("");
+        setSuccess("");
+        setDisabled(true);
+    
+        const button = document.getElementById("sendMessageButton") as HTMLButtonElement | null;
+        if (button) {
+            button.innerHTML = "Sending...";
+        }
+    
+        if (!form.current) {
+            setError("Form not found.");
+            setDisabled(false);
+            if (button) {
+                button.innerHTML = "Send Message";
+            }
+            return;
+        }
+    
+        emailjs
+            .sendForm(
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_TEMPLATE_ID,
+                form.current,
+                { publicKey: import.meta.env.VITE_PUBLIC_KEY }
+            )
+                .then(() => {
+                setSuccess("Message Sent Successfully");
+                form.current?.reset();
+                setDisabled(false);
+                if (button) {
+                    button.innerHTML = "Send Message";
+                }
+            })
+            .catch(() => {
+                setError("Failed to send message. Please try again.");
+                setDisabled(false);
+                if (button) {
+                    button.innerHTML = "Send Message";
+                }
+            });
+    };    
+    
+return (
+    <div className="tech-card p-8 h-full pointer-events-auto ">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-purple-400">Get in touch</h2>
+        <p className="text-white/70 mb-8">Fill out the form and our team will get back to you within 12 hours.</p>
+
+        {error && <p className="text-red-600 mb-2 text-center">{error}</p>}
+
+        {success && <p className="text-green-600 mb-2 text-center">{success}</p>}
+
+        <form onSubmit={handleSubmit(contact)} ref={form} className="space-y-3">
+
+            <input type="text" className="bg-white/5 w-full px-3 py-2 rounded-lg outline-0" placeholder="Your name" {...register("name", {
+                required: true,
+            })}/>
+
+            <input type="email" className="bg-white/5 w-full px-3 py-2 rounded-lg outline-0" placeholder="Your email" {...register("email", {
+                required: true,
+                validate: {
+                    matchPatern: (value) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) || "Email address must be a valid address"}
+            })}/>
+
+            <input type="number" className="bg-white/5 w-full px-3 py-2 rounded-lg outline-0" placeholder="Your phone number" {...register("phoneNumber", {
+                required: true,
+            })}/>
+
+            <input className="bg-white/5 w-full px-3 py-2 rounded-lg outline-0" type="text" placeholder="Region/Country" {...register("subject", {
+                required: true,
+            })}/>
+
                 <textarea
-                    placeholder="Your message"
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-primary/5 text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                    id="message" 
+                    placeholder="Your message" 
+                    className="bg-white/5 border-white/10 text-white placeholder:text-white/50 focus:border-cyan-400/50 focus:ring-cyan-400/20 px-3 py-2 rounded-xl w-full" 
+                    rows={5} 
+                    {...register("message", {
+                        required: true
+                    })}
                 />
-                <Button 
-                    text="Send Message"
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent flex cursor-pointer justify-center"
-                />
-            </form>
-        </div>
-    )
-}
+
+            <button 
+                className="w-full bg-linear-to-r from-primary to-accent text-white rounded-lg py-2 shadow-[0_0_15px_rgba(34,211,238,0.4)] hover:shadow-[0_0_25px_rgba(34,211,238,0.6)] transition-all duration-300 flex items-center justify-center text-lg cursor-pointer" 
+                disabled={disabled}
+                type="submit" 
+                id="sendMessageButton">
+                Send Message
+            </button>
+
+        </form>
+    </div>
+)}
 export default ContactForm
