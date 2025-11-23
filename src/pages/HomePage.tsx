@@ -13,6 +13,7 @@ import {
     RoyIsernBand,
 } from "@/assets/images";
 import OverlayText from "../components/OverlayText"
+import CTA from "../components/CTA"
 
 function HomePage() {
     const testimonials = [
@@ -210,19 +211,12 @@ function HomePage() {
             </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="relative section-divider px-4 md:px-6 py-18 md:py-32 text-center">
-                <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
-                <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
-                <div className="max-w-3xl mx-auto relative z-10 flex flex-col items-center">
-
-                    <OverlayText text="Ready?" />
-                    <h2 className="heading-lg mb-6 text-foreground">Ready to Upgrade Your Online Presence?</h2>
-                    <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">Let’s work together to create impactful designs.</p>
-
-                    <Button text="Get Started" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" />
-                </div>
-        </section>
+        <CTA
+            overlayText="Ready?"
+            heading="Ready to Upgrade Your Online Presence?"
+            description="Let’s work together to create impactful designs."
+            button={<Button text="Get Started" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" />}    
+        />
 
         </div>
     )

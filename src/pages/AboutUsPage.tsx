@@ -3,6 +3,7 @@ import Button from "../components/Button"
 import { Link } from 'react-router'
 import { MarcWeaver, SteveMark, TeamCombine, ZubairAhmad } from '@/assets/images'
 import OverlayText from '../components/OverlayText'
+import CTA from '../components/CTA'
 
 export default function About() {
   return (
@@ -128,21 +129,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative section-divider px-6 md:py-32">
-        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
-        <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
-        <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center border border-white/10 p-10 rounded-lg glow-hover">
-          <h2 className="heading-lg mb-6 text-foreground">Ready to Begin Your Project?</h2>
-          <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">Let’s work together to develop innovative designs that elevate your brand and set you apart in the digital world.</p>
-          <Button 
-              text='Contact Us Today'
-              to='/contact'
-              className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" 
-              icon={<ArrowRight className="w-4 h-4 ml-2" />}
-          />
-        </div>
-      </section>
+      <CTA 
+        overlayText='Contact Us' 
+        heading='Ready to Begin Your Project?' 
+        description='Let’s work together to develop innovative designs that elevate your brand and set you apart in the digital world.' 
+        button={<Button 
+          text='Contact Us Today'
+          to='/contact'
+          className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" 
+          icon={<ArrowRight className="w-4 h-4 ml-2" />} 
+        />}
+      />
+      
     </div>
   )
 }

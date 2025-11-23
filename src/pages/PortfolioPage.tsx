@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import Button from "../components/Button"
-import { Link } from "react-router"
+import CTA from '../components/CTA'
 
 export default function Portfolio() {
   return (
@@ -105,24 +105,20 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative section-divider px-6">
-        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
-        <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
-        <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center">
-          <h2 className="heading-lg mb-6 text-foreground">Ready to Start Your Project?</h2>
-          <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">
-            Let's create something amazing together. Get in touch to discuss your ideas.
-          </p>
-          <Link to="/contact">
-            <Button 
-                text='Start Now'
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-accent rounded-full"
-                icon={<ArrowRight className="w-4 h-4 ml-2" />}
-            />
-          </Link>
-        </div>
-      </section>
+      <CTA 
+        overlayText='Ready?'
+        heading="Ready to Start Your Project?"
+        description="Let's create something amazing together. Get in touch to discuss your ideas."
+        button={
+          <Button 
+              text='Start Now'
+              to='/contact'
+              className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full"
+              icon={<ArrowRight className="w-4 h-4 ml-2" />}
+          />
+        }
+      />
+
     </div>
   )
 }

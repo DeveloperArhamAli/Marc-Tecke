@@ -1,6 +1,7 @@
 import { ArrowRight, Check } from 'lucide-react'
 import Button from '../components/Button'
 import OverlayText from '../components/OverlayText'
+import CTA from '../components/CTA'
 
 export default function Pricing() {
   return (
@@ -168,21 +169,20 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative section-divider px-6 md:py-32">
-        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
-        <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
-        <div className="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center">
-          <h2 className="heading-lg mb-6 text-foreground">Require a Customized Approach?</h2>
-          <p className="body-text mb-6 text-foreground/80 max-w-xl mx-auto">Get in touch to receive a customized quote designed to meet your unique business needs and objectives.</p>
-            <Button 
+      <CTA 
+        overlayText='Ready?'
+        heading='Require a Customized Approach?'
+        description='Get in touch to receive a customized quote designed to meet your unique business needs and objectives.'
+        button={
+          <Button 
                 text='Request Your Quote'
                 to='/contact'
                 className="bg-linear-to-r from-primary to-accent rounded-full text-primary-foreground font-semibold glow-accent"
                 icon={<ArrowRight className="w-4 h-4 ml-2" />}
             />
-        </div>
-      </section>
+        }
+      />
+
     </div>
   )
 }
