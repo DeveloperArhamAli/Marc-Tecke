@@ -162,7 +162,7 @@ class Title {
 
   createMesh() {
     // placeholder title, you can extend to pass actual text content
-    const { texture, width, height } = this.createTextTexture(''); // empty by default
+    const { texture } = this.createTextTexture(''); // empty by default
     const geometry = new Plane(this.gl);
     const program = new Program(this.gl, {
       vertex: `
@@ -223,7 +223,6 @@ class Media {
   itemHeight: number;
 
   private _texture?: Texture;
-  private _imgEl?: HTMLImageElement;
   isBefore: boolean = false;
   isAfter: boolean = false;
 
@@ -332,7 +331,6 @@ class Media {
     img.crossOrigin = 'anonymous';
     img.src = this.image;
     img.onload = () => {
-      this._imgEl = img;
       // replace texture image (do NOT recreate uniforms/program)
       if (this._texture) {
         this._texture.image = img;
