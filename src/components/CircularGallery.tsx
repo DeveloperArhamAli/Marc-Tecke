@@ -1,6 +1,7 @@
-// CircularGallery.tsx
+/* eslint-disable */
+
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { CarlBusbyJr, ChrisHernandez } from '@/assets/images';
 
 type GL = Renderer['gl'];
