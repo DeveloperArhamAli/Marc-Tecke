@@ -22,6 +22,8 @@ function LogoDesignPage() {
           textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.02}
+          itemHeight={10}
+          itemWidth={10}
           items={[
             { image: LogoDesignImage1 },
             { image: LogoDesignImage2 },
