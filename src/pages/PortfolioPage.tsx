@@ -3,6 +3,7 @@ import Button from "../components/Button"
 import CTA from '../components/CTA'
 import OverlayText from '../components/OverlayText'
 import { Link } from 'react-router'
+import { LogoDesignImage1, BrandIndentityImage1, BusinessCardDesignImage1, ProductPackagingDesignImage1, CoverBannerFlyerDesignImage1 } from "@/assets/images/portfolioImages"
 
 export default function Portfolio() {
   return (
@@ -31,34 +32,42 @@ export default function Portfolio() {
             {[
               {
                 title: "Logo Designs",
-                link: "/logo-design"
+                link: "/logo-design",
+                image: LogoDesignImage1
               },
               {
                 title: "Websites",
-                link: "/websites"
+                link: "/websites",
+                image: ""
               },
               {
                 title: "Brand Identity",
-                link: "/brand-identity"
+                link: "/brand-identity",
+                image: BrandIndentityImage1
               },
               {
                 title: "Business Card Designs",
-                link: "/business-card-design"
+                link: "/business-card-design",
+                image: BusinessCardDesignImage1
               },
               {
                 title: "Product Packaging Designs",
-                link: "/product-packaging-design"
+                link: "/product-packaging-design",
+                image: ProductPackagingDesignImage1
               },
               {
                 title: "Cover, Banner & Flyer Designs",
-                link: "/cover-banner-flyer-design  "
+                link: "/cover-banner-flyer-design",
+                image: CoverBannerFlyerDesignImage1
               },
             ].map((project, i) => (
               <div key={i} className="group relative overflow-hidden rounded-lg tech-card glow-hover cursor-pointer">
                 <Link to={project.link}>
-                  <div className="absolute inset-0 bg-linear-to-br from-primary/20 via-accent/10 to-primary/5" />
+                  <div className="absolute inset-0">
+                    <img src={project.image} alt={project.title} className='w-full h-full object-cover' />
+                  </div>
                   <div className="aspect-video relative flex flex-col justify-end p-8 text-white z-10">
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-primary group-hover:to-accent group-hover:bg-clip-text transition-all duration-300">
+                    <h3 className="text-2xl font-bold mb-3 text-white backdrop-blur-3xl px-4 py-2 rounded-md inline-block w-fit">
                       {project.title}
                     </h3>
                   </div>

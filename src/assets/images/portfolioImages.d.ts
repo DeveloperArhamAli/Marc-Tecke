@@ -53,4 +53,8 @@ declare module "@/assets/images/portfolioImages" {
     export const LogoDesignImage52: string;
     export const LogoDesignImage53: string;
     export const LogoDesignImage54: string;
+    export const BrandIndentityImage1: string;
+    export const BusinessCardDesignImage1: string;
+    export const ProductPackagingDesignImage1: string;
+    export const CoverBannerFlyerDesignImage1: string;
 };

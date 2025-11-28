@@ -52,6 +52,10 @@ import LogoDesignImage51 from "./Portfolio/Logo Design/51.jpg"
 import LogoDesignImage52 from "./Portfolio/Logo Design/52.jpg"
 import LogoDesignImage53 from "./Portfolio/Logo Design/53.jpg"
 import LogoDesignImage54 from "./Portfolio/Logo Design/54.jpg"
+import BrandIndentityImage1 from "./Portfolio/Brand Identity/1.jpg"
+import BusinessCardDesignImage1 from "./Portfolio/Business Cards/1.jpg"
+import ProductPackagingDesignImage1 from "./Portfolio/Product Packaging Design/1a.jpg"
+import CoverBannerFlyerDesignImage1 from "./Portfolio/Cover Banner Flyer Designs/1.jpg"
 
 export {
     LogoDesignImage1,
@@ -107,5 +111,9 @@ export {
     LogoDesignImage51,
     LogoDesignImage52,
     LogoDesignImage53,
-    LogoDesignImage54
+    LogoDesignImage54,
+    BrandIndentityImage1,
+    BusinessCardDesignImage1,
+    ProductPackagingDesignImage1,
+    CoverBannerFlyerDesignImage1
 }
