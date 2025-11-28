@@ -83,9 +83,9 @@ function HomePage() {
                             </p>
 
                             <div className="flex gap-2 justify-center lg:justify-start w-full">
-                                <Button text="Get In Touch" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full " />
+                                <Button text="Get In Touch" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-primary text-primary-foreground font-semibold glow-accent rounded-full " />
 
-                                <Button text="Portfolio" to="/portfolio" className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full px-5" />
+                                <Button text="Portfolio" to="/portfolio" className="bg-white/85 text-primary-foreground font-semibold glow-accent rounded-full px-5" />
                             </div>
                         </div>
 
@@ -215,7 +215,7 @@ function HomePage() {
             overlayText="Ready?"
             heading="Ready to Upgrade Your Online Presence?"
             description="Let’s work together to create impactful designs."
-            button={<Button text="Get Started" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" />}    
+            button={<Button text="Get Started" to="/contact" icon={<ArrowRight className="w-4 h-4 ml-2" />} className="bg-primary text-primary-foreground font-semibold glow-accent rounded-full" />}    
         />
 
         </div>

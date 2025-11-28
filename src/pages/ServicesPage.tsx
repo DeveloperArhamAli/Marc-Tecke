@@ -196,12 +196,12 @@ export default function Services() {
               <Button 
                 text='View Pricing'
                 to='/pricing'
-                className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full"
+                className="bg-primary text-primary-foreground font-semibold glow-accent rounded-full"
               />
               <Button 
                 text='Contact Us'
                 to='/contact'
-                className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full"
+                className="bg-white/75 text-primary-foreground font-semibold glow-accent rounded-full"
                 icon={<ArrowRight className="w-4 h-4 ml-2" />} 
               />
             </div>

@@ -1,4 +1,4 @@
-import { Facebook, FacebookIcon, Instagram, InstagramIcon, Mail } from "lucide-react"
+import { Facebook, Instagram, Mail } from "lucide-react"
 import Logo from "./Logo"
 import { Link } from "react-router"
 import { RiWhatsappLine } from "@remixicon/react"
@@ -15,14 +15,14 @@ const Footer = () => {
 
     const socialLinks = [
         {
-            logo: <RiWhatsappLine className="h-6 w-6" />,
-            content: "+33 7 44 99 93 89",
-            link: "https://wa.me/33744999389"
-        },
-        {
             logo: <Mail className="h-5 w-5" />,
             content: "marctecke@gmail.com",
             link: "mailto:marctecke@gmail.com"
+        },
+        {
+            logo: <RiWhatsappLine className="h-6 w-6" />,
+            content: "+33 7 44 99 93 89",
+            link: "https://wa.me/33744999389"
         },
         {
             logo: <Instagram className="h-5 w-5" />,
@@ -57,12 +57,12 @@ const Footer = () => {
             <div className="md:w-1/2 w-full px-4">
                 <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CONTACT</h2>
                 <nav className="list-none mb-10 flex flex-col gap-1">
-                {socialLinks.map((socialLink, i) => (
-                    <li key={i} className="flex items-center gap-2 text-gray-400 hover:text-white"> 
-                    {socialLink.logo}
-                    <a href={socialLink.link} target="_blank">{socialLink.content}</a>
-                    </li>
-                ))}
+                    {socialLinks.map((socialLink, i) => (
+                        <li key={i} className="flex items-center gap-2 text-gray-400 hover:text-white"> 
+                        {socialLink.logo}
+                        <a href={socialLink.link} target="_blank">{socialLink.content}</a>
+                        </li>
+                    ))}
                 </nav>
             </div>
             </div>
@@ -72,18 +72,11 @@ const Footer = () => {
             <p className="text-gray-400 text-sm text-center sm:text-left">Copyright © {new Date().getFullYear()} Marc Tecke
             </p>
             <span className="flex items-center gap-4">
-                <a className="text-gray-400" href="https://wa.me/33744999389" target="_blank">
-                    <RiWhatsappLine className="w-5 h-5" />
-                </a>
-                <a className="text-gray-400" href="mailto:marctecke@gmail.com" target="_blank">
-                    <Mail className="w-5 h-5" />
-                </a>
-                <a className="text-gray-400" href="https://www.instagram.com/marc.tecke/" target="_blank">
-                    <InstagramIcon className="w-5 h-5" />
-                </a>
-                <a className="text-gray-400" href="https://www.facebook.com/marctecke" target="_blank">
-                    <FacebookIcon className="w-5 h-5" />
-                </a>
+                {socialLinks.map((socialLink, i) => (
+                    <li key={i} className="flex items-center gap-2 text-gray-400 hover:text-white"> 
+                        <a href={socialLink.link} target="_blank">{socialLink.logo}</a>
+                    </li>
+                ))}
             </span>
             </div>
         </div>

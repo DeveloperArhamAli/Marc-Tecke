@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon, Linkedin, Mail, TwitterIcon } from "lucide-react"
+import { Facebook, Instagram, Mail } from "lucide-react"
 import ContactForm from "../components/ContactForm"
 import OverlayText from "../components/OverlayText"
 import { RiWhatsappLine } from "@remixicon/react"
@@ -35,40 +35,18 @@ function ContactPage() {
                                 </a>
                             </div>
                             <div>
-                                <p className="text-foreground/60 text-xs font-bold tracking-widest mb-3">FOLLOW</p>
-                                <div className="flex gap-4">
-                                    {[
-                                        {
-                                            name: "Twitter",
-                                            link: "https://x.com/marctecke",
-                                            icon: TwitterIcon
-                                        },
-                                        {
-                                            name: "Facebook",
-                                            link: "https://facebook.com/marctecke",
-                                            icon: FacebookIcon
-                                        },
-                                        {
-                                            name: "Instagram",
-                                            link: "https://instagram.com/marc.tecke",
-                                            icon: InstagramIcon
-                                        },
-                                        {
-                                            name: "LinkedIn",
-                                            link: "https://linkedin.com/marctecke",
-                                            icon: Linkedin
-                                        },
-                                    ].map((social) => (
-                                        <a
-                                            key={social.link}
-                                            href={social.link}
-                                            className="text-foreground/50 hover:text-primary transition-colors text-sm font-medium flex items-center"
-                                        >
-                                            <social.icon className="inline-block w-4 h-4 mr-1" />
-                                            {social.name}
-                                    </a>
-                                    ))}
-                                </div>
+                                <p className="text-foreground/60 text-xs font-bold tracking-widest mb-2">Facebook</p>
+                                <a href="https://facebook.com/marctecke" className="text-primary font-semibold flex items-center gap-1">
+                                    <Facebook className="w-5 h-5" />
+                                    marctecke
+                                </a>
+                            </div>
+                            <div>
+                                <p className="text-foreground/60 text-xs font-bold tracking-widest mb-2">Instagram</p>
+                                <a href="https://instagram.com/marc.tecke" className="text-primary font-semibold flex items-center gap-1">
+                                    <Instagram className="w-5 h-5" />
+                                    marc.tecke
+                                </a>
                             </div>
                         </div>
                     </div>

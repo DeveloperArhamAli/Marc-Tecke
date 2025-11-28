@@ -13,7 +13,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <h1 className="heading-xl mb-6 text-foreground">
-              <span className="gradient-text">About Us</span>
+              <span className="gradient-text">About</span> Us
             </h1>
             <p className="body-text max-w-2xl">Explore our team and the vision that drives us to craft innovative and memorable digital experiences.</p>
           </div>
@@ -27,14 +27,14 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <OverlayText text='Our Vision' />
-              <h2 className="heading-lg mb-6 gradient-text">Passionate Experts Focused on Superior Digital Solutions</h2>
+              <h2 className="heading-lg mb-6 gradient-text">Passionate Experts <span className='text-white'>Focused on Superior</span> Digital Solutions</h2>
               <p className="body-text mb-6">Established in 2016, MARC TECKE has grown into a trusted name in digital design and development. From distinctive logo creation to full scale website development, our talented team is committed to delivering high-quality digital solutions that elevate brands and support business growth in an ever evolving online world.</p>
               <p className="body-text mb-8">We understand that exceptional design is more than visual appeal, it’s about shaping experiences that resonate, communicate value, and build lasting connections with audiences. Guided by a blend of creativity, advanced technology, and strategic thinking, we craft digital experiences that not only look outstanding but also achieve measurable results.</p>
               <Link to="#contact">
                 <Button 
                     text='Start a Project'
                     icon={<ArrowRight className="w-4 h-4 ml-2" />}
-                    className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full"
+                    className="bg-primary text-primary-foreground font-semibold glow-accent rounded-full"
                 />
               </Link>
             </div>
@@ -136,7 +136,7 @@ export default function About() {
         button={<Button 
           text='Contact Us Today'
           to='/contact'
-          className="bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold glow-accent rounded-full" 
+          className="bg-primary text-primary-foreground font-semibold glow-accent rounded-full" 
           icon={<ArrowRight className="w-4 h-4 ml-2" />} 
         />}
       />

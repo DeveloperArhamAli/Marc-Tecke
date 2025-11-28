@@ -177,7 +177,7 @@ export default function Pricing() {
           <Button 
                 text='Request Your Quote'
                 to='/contact'
-                className="bg-linear-to-r from-primary to-accent rounded-full text-primary-foreground font-semibold glow-accent"
+                className="bg-primary rounded-full text-primary-foreground font-semibold glow-accent"
                 icon={<ArrowRight className="w-4 h-4 ml-2" />}
             />
         }
