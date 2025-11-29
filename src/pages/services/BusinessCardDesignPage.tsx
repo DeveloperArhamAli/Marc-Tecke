@@ -34,7 +34,7 @@ function BusinessCardDesignPage() {
         <CircularGallery
           bend={0} 
           textColor="#ffffff" 
-          borderRadius={0} 
+          borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={14}
