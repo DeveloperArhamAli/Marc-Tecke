@@ -152,4 +152,15 @@ declare module "@/assets/images/portfolioImages" {
     export const CoverBannerFlyerDesignImage22: string;
     export const CoverBannerFlyerDesignImage23: string;
     export const CoverBannerFlyerDesignImage24: string;
+    export const WebsiteImage1: string;
+    export const WebsiteImage2: string;
+    export const WebsiteImage3: string;
+    export const WebsiteImage4: string;
+    export const WebsiteImage5: string;
+    export const WebsiteImage6: string;
+    export const WebsiteImage7: string;
+    export const WebsiteImage8: string;
+    export const WebsiteImage9: string;
+    export const WebsiteImage10: string;
+    export const WebsiteImage11: string;
 };

@@ -56,7 +56,7 @@ function ContactForm() {
 return (
     <div className="tech-card p-8 h-full pointer-events-auto ">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-purple-400">Get in touch</h2>
-        <p className="text-white/70 mb-8">Fill out the form and our team will get back to you within 12 hours.</p>
+        <p className="text-white/70 mb-8">Complete the form and our team will get back to you promptly with a tailored response.</p>
 
         {error && <p className="text-red-600 mb-2 text-center">{error}</p>}
 
