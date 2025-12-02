@@ -38,7 +38,7 @@ function ContactPage() {
                                 <p className="text-foreground/60 text-xs font-bold tracking-widest mb-2">Facebook</p>
                                 <a href="https://facebook.com/marctecke" className="text-primary font-semibold flex items-center gap-1">
                                     <Facebook className="w-5 h-5" />
-                                    marctecke
+                                    Marc Tecke
                                 </a>
                             </div>
                             <div>

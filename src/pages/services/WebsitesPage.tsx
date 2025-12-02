@@ -15,15 +15,17 @@ import {
 
 function WebsitesPage() {
   return (
-    <div>
-      <div>
+    <div className="flex flex-col gap-10 pt-20 pb-10">
+      <h1 className="text-center text-3xl">Websites</h1>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
-          itemHeight={7}
-          itemWidth={7}
+          itemHeight={10}
+          itemWidth={15}
+          autoSlide={true}
+          autoDirection="left"
           items={[
             { image: WebsiteImage1 },
             { image: WebsiteImage2 },
@@ -34,14 +36,15 @@ function WebsitesPage() {
           ]}
         />
       </div>
-      <div>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
-          itemHeight={7}
-          itemWidth={7}
+          itemHeight={10}
+          itemWidth={15}
+          autoSlide={true}
+          autoDirection="right" 
           items={[
             { image: WebsiteImage7 },
             { image: WebsiteImage8 },

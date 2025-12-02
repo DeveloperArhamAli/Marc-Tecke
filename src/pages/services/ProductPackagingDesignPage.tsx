@@ -34,15 +34,17 @@ import CircularGallery from "../../components/CircularGallery"
 
 function ProductPackagingDesignPage() {
   return (
-    <div>
-          <div>
+    <div className="flex flex-col gap-10 pt-20 pb-10">
+      <h1 className="text-center text-3xl">Product Packaging Design</h1>
+          <div className="-my-20">
             <CircularGallery
               bend={0} 
-              textColor="#ffffff" 
               borderRadius={0.05} 
               scrollEase={0.2}
               itemHeight={10}
               itemWidth={14}
+              autoSlide={true}
+              autoDirection="left"
               items={[
                 { image: ProductPackagingDesignImage1 },
                 { image: ProductPackagingDesignImage2 },
@@ -62,14 +64,15 @@ function ProductPackagingDesignPage() {
               ]}
               />
           </div>
-          <div>
+          <div className="-my-20">
             <CircularGallery
               bend={0} 
-              textColor="#ffffff" 
               borderRadius={0.05} 
               scrollEase={0.2}
               itemHeight={10}
               itemWidth={14}
+              autoSlide={true}
+              autoDirection="right"
               items={[
                 { image: ProductPackagingDesignImage16 },
                 { image: ProductPackagingDesignImage17 },

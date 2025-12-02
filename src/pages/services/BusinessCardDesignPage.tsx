@@ -29,15 +29,17 @@ import {
 
 function BusinessCardDesignPage() {
   return (
-    <div>
-      <div>
+    <div className="flex flex-col gap-10 pt-20 pb-10">
+      <h1 className="text-center text-3xl">Business Card Design</h1>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={14}
+          autoDirection="left"
+          autoSlide={true}
           items={[
             { image: BusinessCardDesignImage1 },
             { image: BusinessCardDesignImage2 },
@@ -54,14 +56,15 @@ function BusinessCardDesignPage() {
           ]}
         />
       </div>
-      <div>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={15}
+          autoDirection="right"
+          autoSlide={true}
           items={[
             { image: BusinessCardDesignImage13 },
             { image: BusinessCardDesignImage14 },

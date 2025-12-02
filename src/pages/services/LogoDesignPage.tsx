@@ -58,15 +58,17 @@ import {
 
 function LogoDesignPage() {
   return (
-    <div>
-      <div>
+    <div className="h-full pt-20 pb-10 flex flex-col gap-8">
+      <h1 className="text-center text-3xl">Logo Design</h1>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={10}
+          autoSlide={true}
+          autoDirection="left"
           items={[
             { image: LogoDesignImage1 },
             { image: LogoDesignImage2 },
@@ -89,14 +91,15 @@ function LogoDesignPage() {
           ]}
         />
       </div>
-      <div>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={10}
+          autoSlide={true}
+          autoDirection="right"
           items={[
             { image: LogoDesignImage19 },
             { image: LogoDesignImage20 },
@@ -119,14 +122,15 @@ function LogoDesignPage() {
           ]}
         />
       </div>
-      <div>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={10}
+          autoSlide={true}
+          autoDirection="left"
           items={[
             { image: LogoDesignImage37 },
             { image: LogoDesignImage38 },

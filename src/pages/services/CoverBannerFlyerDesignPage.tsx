@@ -26,15 +26,17 @@ import CircularGallery from "../../components/CircularGallery"
 
 function CoverBannerFlyerDesignPage() {
   return (
-    <div>
-      <div>
+    <div className="flex flex-col gap-10 pt-20 pb-10">
+      <h1 className="text-center text-3xl">Cover & Banner & Flyer Design</h1>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={15}
+          autoSlide={true}
+          autoDirection="left"
           items={[
             { image: CoverBannerFlyerDesignImage1 },
             { image: CoverBannerFlyerDesignImage2 },
@@ -51,14 +53,15 @@ function CoverBannerFlyerDesignPage() {
           ]}
           />
       </div>
-      <div>
+      <div className="-my-20">
         <CircularGallery
           bend={0} 
-          textColor="#ffffff" 
           borderRadius={0.05} 
           scrollEase={0.2}
           itemHeight={10}
           itemWidth={15}
+          autoSlide={true}
+          autoDirection="right"
           items={[
             { image: CoverBannerFlyerDesignImage13 },
             { image: CoverBannerFlyerDesignImage14 },
