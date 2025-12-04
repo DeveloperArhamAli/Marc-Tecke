@@ -8,24 +8,19 @@ function ContactForm() {
     const [error, setError] = useState("")
     const [success, setSuccess] = useState("")
     const [disabled, setDisabled] = useState(false)
+    const [buttonText, setButtonText] = useState("Send Message")
     const form = useRef<HTMLFormElement | null>(null);
 
     const contact = () => {
         setError("");
         setSuccess("");
         setDisabled(true);
-    
-        const button = document.getElementById("sendMessageButton") as HTMLButtonElement | null;
-        if (button) {
-            button.innerHTML = "Sending...";
-        }
+        setButtonText("Sending...");
     
         if (!form.current) {
             setError("Form not found.");
             setDisabled(false);
-            if (button) {
-                button.innerHTML = "Send Message";
-            }
+            setButtonText("Send Message");
             return;
         }
     
@@ -40,16 +35,12 @@ function ContactForm() {
                 setSuccess("Message Sent Successfully");
                 form.current?.reset();
                 setDisabled(false);
-                if (button) {
-                    button.innerHTML = "Send Message";
-                }
+                setButtonText("Send Message");
             })
             .catch(() => {
                 setError("Failed to send message. Please try again.");
                 setDisabled(false);
-                if (button) {
-                    button.innerHTML = "Send Message";
-                }
+                setButtonText("Send Message");
             });
     };    
     
@@ -60,7 +51,7 @@ return (
 
         {error && <p className="text-red-600 mb-2 text-center">{error}</p>}
 
-        {success && <p className="text-green-600 mb-2 text-center">{success}</p>}
+        {success && <p className="text-green-500 mb-2 text-center">{success}</p>}
 
         <form onSubmit={handleSubmit(contact)} ref={form} className="space-y-3">
 
@@ -78,7 +69,7 @@ return (
                 required: true,
             })}/>
 
-            <input className="bg-white/5 w-full px-3 py-2 rounded-lg outline-0" type="text" placeholder="Region/Country" {...register("subject", {
+            <input className="bg-white/5 w-full px-3 py-2 rounded-lg outline-0" type="text" placeholder="Region/Country" {...register("region", {
                 required: true,
             })}/>
 
@@ -97,7 +88,7 @@ return (
                 disabled={disabled}
                 type="submit" 
                 id="sendMessageButton">
-                Send Message
+                {buttonText}
             </button>
 
         </form>
