@@ -15,10 +15,111 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* Pricing Cards */}
+      {/* Logo Design Pricing Cards */}
       <section className="relative section-divider px-6 border-t border-border pt-15">
         <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
         <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
+        <h1 className="heading-xl mb-6 text-foreground text-center pb-7">Logo Design Packages</h1>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Basic",
+                price: "$149",
+                description: "Perfect for startups needing a clean, professional logo.",
+                features: [
+                  "2 Initial Logo Concepts",
+                  "2 Revisions",
+                  "High-Resolution Files (PNG, JPG)",
+                  "Transparent Background",
+                  "Delivery in 3 Days",
+                ],
+                highlighted: false,
+              },
+              {
+                name: "Standard",
+                price: "$249",
+                description: "A complete branding-ready logo with more creative exploration.",
+                features: [
+                  "4 Initial Logo Concepts",
+                  "Unlimited Revisions",
+                  "Source Files (AI, EPS, PDF, JPG, PNG, 3D Mockups)",
+                  "High-Resolution Files",
+                  "Black & White Versions",
+                  "Brand Color Palette",
+                  "Delivery in 2 Days",
+                ],
+                highlighted: true,
+              },
+              {
+                name: "Premium",
+                price: "$449",
+                description: "Full branding solution with everything you need to launch.",
+                features: [
+                  "6 Premium Logo Concepts",
+                  "Unlimited Revisions",
+                  "Complete Source Files (AI, EPS, PDF, SVG, JPG, PNG & 3D Mockups)",
+                  "Full Brand Guide (Colors, Typography, Usage)",
+                  "Social Media Kit (Profile, Post Templates)",
+                  "Stationery Design (Business Card, Letterhead)",
+                  "Priority Support",
+                  "Delivery in 24-48 Hours",
+                ],
+                highlighted: false,
+              },
+            ].map((plan, i) => (
+              <div
+                key={i}
+                className={`tech-card p-8 glow-hover flex flex-col pointer-events-auto before:pointer-events-none after:pointer-events-none ${plan.highlighted ? "ring-2 ring-primary lg:scale-105" : ""}`}
+              >
+                {plan.highlighted && (
+                  <div className="mb-4 inline-block">
+                    <span className="px-3 py-1 text-xs font-bold bg-linear-to-r from-primary to-accent bg-clip-text text-transparent tracking-widest">
+                      POPULAR
+                    </span>
+                  </div>
+                )}
+                <h3 className="text-2xl font-bold text-foreground mb-2">{plan.name}</h3>
+                <p className="text-foreground/60 text-sm mb-6">{plan.description}</p>
+
+                <div className="mb-8">
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-4xl font-bold bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+                      {plan.price}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="space-y-4 mb-8 flex-1">
+                  {plan.features.map((feature, j) => (
+                    <div key={j} className="flex items-center gap-3">
+                      <Check className="w-4 h-4 text-primary shrink-0" />
+                      <span className="text-foreground/80 text-sm">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                  <Button
+                    className={`w-full font-semibold ${
+                      plan.highlighted
+                        ? "bg-primary hover:bg-primary/90 text-primary-foreground glow-accent justify-center"
+                        : "border-primary/50 text-foreground bg-primary/10 justify-center"
+                    }`}
+                    text='Get Started'
+                    to='/contact'
+                    icon={<ArrowRight className="w-4 h-4 ml-2" />}
+                  />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Website Pricing Cards */}
+      <section className="relative section-divider px-6 border-t border-border pt-15">
+        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-transparent to-accent/20 blur-3xl opacity-50" />
+        <h1 className="heading-xl mb-6 text-foreground text-center pb-5">Website Packages</h1>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[

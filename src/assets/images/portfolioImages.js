@@ -149,17 +149,23 @@ import CoverBannerFlyerDesignImage19 from "./Portfolio/Cover Banner Flyer Design
 import CoverBannerFlyerDesignImage20 from "./Portfolio/Cover Banner Flyer Designs/20.jpg"
 import CoverBannerFlyerDesignImage21 from "./Portfolio/Cover Banner Flyer Designs/21.jpg"
 import CoverBannerFlyerDesignImage22 from "./Portfolio/Cover Banner Flyer Designs/22.jpg"
-import WebsiteImage1 from "./Portfolio/Website Images/WebsiteImage1.png"
-import WebsiteImage2 from "./Portfolio/Website Images/WebsiteImage2.png"
-import WebsiteImage3 from "./Portfolio/Website Images/WebsiteImage3.png"
-import WebsiteImage4 from "./Portfolio/Website Images/WebsiteImage4.png"
-import WebsiteImage5 from "./Portfolio/Website Images/WebsiteImage5.png"
-import WebsiteImage6 from "./Portfolio/Website Images/WebsiteImage6.png"
-import WebsiteImage7 from "./Portfolio/Website Images/WebsiteImage7.png"
-import WebsiteImage8 from "./Portfolio/Website Images/WebsiteImage8.png"
-import WebsiteImage9 from "./Portfolio/Website Images/WebsiteImage9.png"
-import WebsiteImage10 from "./Portfolio/Website Images/WebsiteImage10.png"
-import WebsiteImage11 from "./Portfolio/Website Images/WebsiteImage11.png"
+import WebsiteImage1 from "./Portfolio/Website Images/Benchmark Cleaning Services.webp"
+import WebsiteImage2 from "./Portfolio/Website Images/Bonnie By Ford.webp"
+import WebsiteImage3 from "./Portfolio/Website Images/Green Bridge.webp"
+import WebsiteImage4 from "./Portfolio/Website Images/MauriGo Car Rentals.webp"
+import WebsiteImage5 from "./Portfolio/Website Images/Milan Laser Hair Removal.webp"
+import WebsiteImage6 from "./Portfolio/Website Images/Pines RV Park.webp"
+import WebsiteImage7 from "./Portfolio/Website Images/SDC Quincy Data Centers.webp"
+import WebsiteImage8 from "./Portfolio/Website Images/Siesta Motel Colfax.webp"
+import WebsiteImage9 from "./Portfolio/Website Images/The Dead Rabbit.webp"
+import WebsiteImage10 from "./Portfolio/Website Images/Trader Joe_s.webp"
+import WebsiteImage11 from "./Portfolio/Website Images/USA Roof Maters.webp"
+import BrandIdentityThumbnail from "./Portfolio/Brand Identity.jpg"
+import BusinessCardsThumbnail from "./Portfolio/Business Cards.jpg"
+import LogoDesignThumbnail from "./Portfolio/Logo Designs.jpg"
+import ProductPackagingDesignThumbnail from "./Portfolio/Product Packaging.jpg"
+import CoverBannerFlyerDesignThumbnail from "./Portfolio/Cover Banner Flyer.jpg"
+import WebsitesThumbnail from "./Portfolio/Websites.jpg"
 
 export {
     LogoDesignImage1,
@@ -324,4 +330,10 @@ export {
     WebsiteImage9,
     WebsiteImage10,
     WebsiteImage11,
+    BrandIdentityThumbnail,
+    BusinessCardsThumbnail,
+    LogoDesignThumbnail,
+    ProductPackagingDesignThumbnail,
+    CoverBannerFlyerDesignThumbnail,
+    WebsitesThumbnail
 }

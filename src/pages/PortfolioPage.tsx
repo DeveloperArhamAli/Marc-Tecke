@@ -3,7 +3,14 @@ import Button from "../components/Button"
 import CTA from '../components/CTA'
 import OverlayText from '../components/OverlayText'
 import { Link } from 'react-router'
-import { LogoDesignImage1, BrandIdentityImage1, BusinessCardDesignImage1, ProductPackagingDesignImage1, CoverBannerFlyerDesignImage1 } from "@/assets/images/portfolioImages"
+import { 
+  BrandIdentityThumbnail,
+  BusinessCardsThumbnail,
+  LogoDesignThumbnail,
+  ProductPackagingDesignThumbnail,
+  CoverBannerFlyerDesignThumbnail,
+  WebsitesThumbnail
+} from "@/assets/images/portfolioImages"
 
 export default function Portfolio() {
   return (
@@ -33,32 +40,32 @@ export default function Portfolio() {
               {
                 title: "Logo Designs",
                 link: "/logo-design",
-                image: LogoDesignImage1
+                image: LogoDesignThumbnail
               },
               {
                 title: "Websites",
                 link: "/websites",
-                image: ""
+                image: WebsitesThumbnail
               },
               {
                 title: "Brand Identity",
                 link: "/brand-identity",
-                image: BrandIdentityImage1
+                image: BrandIdentityThumbnail
               },
               {
                 title: "Business Card Designs",
                 link: "/business-card-design",
-                image: BusinessCardDesignImage1
+                image: BusinessCardsThumbnail
               },
               {
                 title: "Product Packaging Designs",
                 link: "/product-packaging-design",
-                image: ProductPackagingDesignImage1
+                image: ProductPackagingDesignThumbnail
               },
               {
                 title: "Cover, Banner & Flyer Designs",
                 link: "/cover-banner-flyer-design",
-                image: CoverBannerFlyerDesignImage1
+                image: CoverBannerFlyerDesignThumbnail
               },
             ].map((project, i) => (
               <div key={i} className="group relative overflow-hidden rounded-lg glow-hover cursor-pointer border border-white/40 hover:border-primary transition-all duration-300">
@@ -67,7 +74,7 @@ export default function Portfolio() {
                     <img src={project.image} alt={project.title} className='w-full h-full object-contain' />
                   </div>
                   <div className="aspect-video relative flex flex-col justify-end p-2 text-white z-10">
-                    <h3 className="text-lg font-bold mb-3 text-white backdrop-blur-3xl px-4 py-2 rounded-md inline-block w-fit">
+                    <h3 className="text-lg font-bold mb-3 text-white backdrop-blur-3xl px-4 py-2 rounded-md inline-block w-fit bg-black/60">
                       {project.title}
                     </h3>
                   </div>

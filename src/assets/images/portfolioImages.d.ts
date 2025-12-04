@@ -163,4 +163,10 @@ declare module "@/assets/images/portfolioImages" {
     export const WebsiteImage9: string;
     export const WebsiteImage10: string;
     export const WebsiteImage11: string;
+    export const BrandIdentityThumbnail: string;
+    export const BusinessCardsThumbnail: string;
+    export const CoverBannerFlyerDesignThumbnail: string;
+    export const LogoDesignThumbnail: string;
+    export const ProductPackagingDesignThumbnail: string;
+    export const WebsitesThumbnail: string;
 };
