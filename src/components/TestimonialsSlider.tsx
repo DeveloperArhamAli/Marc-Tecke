@@ -9,6 +9,7 @@ interface Testimonial {
     name: string;
     designation: string;
     image: string;
+    link: string;
 }
 
 function TestimonialSlider({ testimonials, autoSlideInterval = 5000 }: { testimonials: Testimonial[]; autoSlideInterval?: number }) {
