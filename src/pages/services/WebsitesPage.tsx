@@ -73,7 +73,10 @@ function WebsitesPage() {
   
   return (
     <div className="flex flex-col gap-10 pt-20 pb-10">
-      <h1 className="text-center text-3xl">Websites</h1>
+      <div className="relative">
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
+        <h1 className="heading-xl mb-6 text-foreground text-center"><span className="gradient-text">Websites</span></h1>
+      </div>
       <div className="flex flex-wrap px-5 justify-center">
         {images.map((image, index) => (
           <div key={index} className="inline-block w-1/2 h-fit p-2">

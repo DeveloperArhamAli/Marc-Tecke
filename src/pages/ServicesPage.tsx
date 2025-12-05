@@ -8,49 +8,56 @@ import CTA from '../components/CTA'
 
 export default function Services() {
   const testimonials = [
-      {
-          name: "Brad Gantt",
-          designation: "Wildlife Rehabilitator",
-          message: "Worked with Marc Tecke on a logo for a small private business and it came out amazing! Much thanks and I am very pleased with the results!",
-          image: BradGantt
-      },
-      {
-          name: "Carl Busby Jr.",
-          designation: "Reptiles Keeper",
-          message: "Many reviews mention how patient and attentive Marc Tecke is in providing time and  services, you get no argument from me.  I will be back for additional works.",
-          image: CarlBusbyJr
-      },
-      {
-          name: "Chris Hernandez",
-          designation: "Customer Service Technician at AT&T",
-          message: "I contacted Marc Tecke for a website for my business. He was quick to respond and very friendly. He was quick and able to make all the adjustments that I was looking for. I would definitely do business with him again and would recommend him to anyone that is looking to have a website or design created. Thanks for your help Marc Tecke!",
-          image: ChrisHernandez
-      },
-      {
-          name: "Steven Diamond",
-          designation: "Founder Of Diamond AI Media Group",
-          message: "Marc Tecke did an outstanding job on graphics for Diamond AI Media Group! Creative, professional, and patient with revisions, he nailed my vision. Highly recommend and will use his services again!",
-          image: DiamondAIMediaGroup
-      },
-      {
-          name: "Jim Martenson",
-          designation: "Leadership Coach",
-          message: "Marc Tecke created my website and was always available when I needed him. They instantly responded to my requests, and custom-made my site to my exact specifications. I highly recommend their work for anyone wanting to design their website!",
-          image: JimMartenson
-      },
-      {
-          name: "Kahlil Mckinnie",
-          designation: "Gym Owner | Divine Fitness & MMA",
-          message: "Working with marc tecke has been a pleasure. They designed the logo for my gym and it was exactly what i was looking for in the first try. and the quality of it was perfect.  communication was great and turn around time was amazing even with a huge time difference between us. i was on a time crunch and he got the job done.  i would definitely recommend him and he will be the only graphic designer i will use for future projects.",
-          image: KahlilMckinnie
-      },
-      {
-          name: "Roy Isern",
-          designation: "Director Of Roy Isern Band",
-          message: "I posted looking for a graphic designer, and Marc Tecke stood out. After seeing their portfolio and chatting, I chose him for the Roy Isern Band logo. He was professional, creative, and delivered a logo I LOVE in less than 24 hours. 10/10 recommend and will use their services again!",
-          image: RoyIsernBand
-      },
-      ]
+    {
+        name: "Brad Gantt",
+        link: "https://www.facebook.com/BradleyGantt",
+        designation: "Wildlife Rehabilitator",
+        message: "Worked with Marc Tecke on a logo for a small private business and it came out amazing! Much thanks and I am very pleased with the results!",
+        image: BradGantt
+    },
+    {
+        name: "Carl Busby Jr.",
+        link: "https://www.facebook.com/ARTerrariums",
+        designation: "Reptiles Keeper",
+        message: "Many reviews mention how patient and attentive Marc Tecke is in providing time and  services, you get no argument from me.  I will be back for additional works.",
+        image: CarlBusbyJr
+    },
+    {
+        name: "Chris Hernandez",
+        link: "https://www.facebook.com/chris.hernandez.58760608",
+        designation: "Customer Service Technician at AT&T",
+        message: "I contacted Marc Tecke for a website for my business. He was quick to respond and very friendly. He was quick and able to make all the adjustments that I was looking for. I would definitely do business with him again and would recommend him to anyone that is looking to have a website or design created. Thanks for your help Marc Tecke!",
+        image: ChrisHernandez
+    },
+    {
+        name: "Steven Diamond",
+        link: "https://www.facebook.com/stevendiamond",
+        designation: "Founder Of Diamond AI Media Group",
+        message: "Marc Tecke did an outstanding job on graphics for Diamond AI Media Group! Creative, professional, and patient with revisions, he nailed my vision. Highly recommend and will use his services again!",
+        image: DiamondAIMediaGroup
+    },
+    {
+        name: "Jim Martenson",
+        link: "https://www.facebook.com/jamartenson",
+        designation: "Leadership Coach",
+        message: "Marc Tecke created my website and was always available when I needed him. They instantly responded to my requests, and custom-made my site to my exact specifications. I highly recommend their work for anyone wanting to design their website!",
+        image: JimMartenson
+    },
+    {
+        name: "Kahlil Mckinnie",
+        link: "https://www.facebook.com/25kaotic",
+        designation: "Gym Owner | Divine Fitness & MMA",
+        message: "Working with marc tecke has been a pleasure. They designed the logo for my gym and it was exactly what i was looking for in the first try. and the quality of it was perfect.  communication was great and turn around time was amazing even with a huge time difference between us. i was on a time crunch and he got the job done.  i would definitely recommend him and he will be the only graphic designer i will use for future projects.",
+        image: KahlilMckinnie
+    },
+    {
+        name: "Roy Isern",
+        link: "https://www.facebook.com/royisernguitar",
+        designation: "Director Of Roy Isern Band",
+        message: "I posted looking for a graphic designer, and Marc Tecke stood out. After seeing their portfolio and chatting, I chose him for the Roy Isern Band logo. He was professional, creative, and delivered a logo I LOVE in less than 24 hours. 10/10 recommend and will use their services again!",
+        image: RoyIsernBand
+    },
+    ]
   
   return (
     <div className="min-h-screen bg-background overflow-hidden">

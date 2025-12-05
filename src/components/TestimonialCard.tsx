@@ -6,6 +6,7 @@ interface TestimonialCardProps {
   image: string;
   message: string;
   keyProp: number;
+  link: string;
 }
 
 function TestimonialCard({
@@ -14,6 +15,7 @@ function TestimonialCard({
   image,
   message,
   keyProp,
+  link,
 }: TestimonialCardProps) {
   return (
     <motion.div
@@ -39,13 +41,17 @@ function TestimonialCard({
         {/* FOOTER: IMAGE + NAME */}
         <div className="flex items-center gap-4 mt-4 max-md:mt-3">
           <div className="size-14 max-md:size-12 rounded-full overflow-hidden border border-white/20 shadow-md shrink-0">
-            <img src={image} alt={name} className="w-full h-full object-cover" />
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <img src={image} alt={name} className="w-full h-full object-cover" />
+            </a>
           </div>
 
           <div className="flex flex-col items-start">
-            <h3 className="text-lg max-md:text-base font-semibold text-white">
-              {name}
-            </h3>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <h3 className="text-lg max-md:text-base font-semibold text-white">
+                {name}
+              </h3>
+            </a>
             <p className="text-primary text-sm max-md:text-xs">
               {designation}
             </p>

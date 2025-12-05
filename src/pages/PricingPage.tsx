@@ -25,7 +25,7 @@ export default function Pricing() {
             {[
               {
                 name: "Basic",
-                price: "$149",
+                price: "$99",
                 description: "Perfect for startups needing a clean, professional logo.",
                 features: [
                   "2 Initial Logo Concepts",
@@ -38,7 +38,7 @@ export default function Pricing() {
               },
               {
                 name: "Standard",
-                price: "$249",
+                price: "$199",
                 description: "A complete branding-ready logo with more creative exploration.",
                 features: [
                   "4 Initial Logo Concepts",
@@ -53,7 +53,7 @@ export default function Pricing() {
               },
               {
                 name: "Premium",
-                price: "$449",
+                price: "$499",
                 description: "Full branding solution with everything you need to launch.",
                 features: [
                   "6 Premium Logo Concepts",
@@ -133,6 +133,7 @@ export default function Pricing() {
                   "Contact form integration",
                   "Mobile-friendly design",
                   "30 days of post-launch support",
+                  "Delivery in 15 Days"
                 ],
                 highlighted: false,
               },
@@ -148,6 +149,7 @@ export default function Pricing() {
                   "Social media integration",
                   "90 days of post-launch support",
                   "3 rounds of design revisions",
+                  "Delivery in 30 Days"
                 ],
                 highlighted: true,
               },
@@ -165,6 +167,7 @@ export default function Pricing() {
                   "180 days of priority post-launch support",
                   "5 rounds of design revisions",
                   "Social media strategy & campaign guidance",
+                  "Delivery in 2-4 Months"
                 ],
                 highlighted: false,
               },

@@ -27,7 +27,10 @@ import CircularGallery from "../../components/CircularGallery"
 function CoverBannerFlyerDesignPage() {
   return (
     <div className="flex flex-col gap-10 pt-20 pb-10">
-      <h1 className="text-center text-3xl">Cover & Banner & Flyer Design</h1>
+      <div className="relative">
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent"></div>
+        <h1 className="heading-xl mb-6 text-foreground text-center"><span className="gradient-text">Cover, Banner & Flyer </span>Designs</h1>
+      </div>
       <div className="-my-20">
         <CircularGallery
           bend={0} 
